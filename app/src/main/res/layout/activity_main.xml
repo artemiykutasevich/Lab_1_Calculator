@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight = "1">
+
+            <TextView
+                android:id="@+id/btn_Result"
+                style="@style/my_title_style"
+                android:text="Lab_1_Calculator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight = "1">
+
+            <TextView
+                android:id="@+id/btn_Expression"
+                style="@style/my_result_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight = "1">
+
+            <TextView
+                android:id="@+id/btn_AC"
+                style="@style/my_button_style_2"
+                android:text="AC" />
+
+            <TextView
+                android:id="@+id/btn_open"
+                style="@style/my_button_style_2"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/btn_close"
+                style="@style/my_button_style_2"
+                android:text=")" />
+
+            <TextView
+                android:id="@+id/btn_div"
+                style="@style/my_button_style_2"
+                android:text="/" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight = "1">
+
+            <TextView
+                android:id="@+id/btn_seven"
+                style="@style/my_button_style"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/btn_eight"
+                style="@style/my_button_style"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/btn_nine"
+                style="@style/my_button_style"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/btn_multi"
+                style="@style/my_button_style_2"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight = "1">
+
+            <TextView
+                android:id="@+id/btn_four"
+                style="@style/my_button_style"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/btn_five"
+                style="@style/my_button_style"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/btn_six"
+                style="@style/my_button_style"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/btn_sub"
+                style="@style/my_button_style_2"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight = "1">
+
+            <TextView
+                android:id="@+id/btn_one"
+                style="@style/my_button_style"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/btn_two"
+                style="@style/my_button_style"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/btn_three"
+                style="@style/my_button_style"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/btn_plus"
+                style="@style/my_button_style_2"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight = "1">
+
+            <TextView
+                android:id="@+id/btn_dot"
+                style="@style/my_button_style"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/btn_zero"
+                style="@style/my_button_style"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                style="@style/my_button_style"
+                android:src = "@mipmap/back"
+                android:scaleType = "center"/>
+
+            <TextView
+                android:id="@+id/btn_equals"
+                style="@style/my_button_style_2"
+                android:text="="/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
