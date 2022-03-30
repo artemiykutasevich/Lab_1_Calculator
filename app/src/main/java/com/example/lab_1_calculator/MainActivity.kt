@@ -82,11 +82,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickGoSin(view: View) {
+        pokaz("sin", false)
+
         val intent = Intent(this, sinActivity::class.java)
         startActivity(intent)
     }
 
     fun onClickGoCos(view: View) {
+        pokaz("cos", false)
+
         val intent = Intent(this, cosActivity::class.java)
         startActivity(intent)
     }
