@@ -34,8 +34,15 @@ class MainActivity : AppCompatActivity() {
         btn_open.setOnClickListener { pokaz("(", false)}
         btn_close.setOnClickListener { pokaz(")", false)}
 
-//        btn_sin.setOnClickListener { pokaz("sin", false)}
-//        btn_cos.setOnClickListener { pokaz("cos", false)}
+        btn_sin.setOnLongClickListener {
+            pokaz("sin", false)
+            return@setOnLongClickListener true
+        }
+
+        btn_cos.setOnLongClickListener {
+            pokaz("cos", false)
+            return@setOnLongClickListener true
+        }
 
         btn_back.setOnClickListener {
             val stroka = btn_Expression.text.toString()
@@ -82,15 +89,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickGoSin(view: View) {
-        pokaz("sin", false)
-
         val intent = Intent(this, sinActivity::class.java)
         startActivity(intent)
     }
 
     fun onClickGoCos(view: View) {
-        pokaz("cos", false)
-
         val intent = Intent(this, cosActivity::class.java)
         startActivity(intent)
     }
