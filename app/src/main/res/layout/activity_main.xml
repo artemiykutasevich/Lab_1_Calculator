@@ -49,6 +49,20 @@
                 style="@style/my_button_style_2"
                 android:text="AC" />
 
+            <Button
+                android:id="@+id/btn_sin"
+                style="@style/my_button_style_2"
+                android:onClick="onClickGoSin"
+                android:text="sin"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_cos"
+                style="@style/my_button_style_2"
+                android:onClick="onClickGoCos"
+                android:text="cos"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/btn_open"
                 style="@style/my_button_style_2"

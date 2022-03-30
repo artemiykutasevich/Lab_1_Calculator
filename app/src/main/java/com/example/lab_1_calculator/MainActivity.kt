@@ -1,7 +1,9 @@
 package com.example.lab_1_calculator
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
@@ -31,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         btn_multi.setOnClickListener { pokaz("*", false)}
         btn_open.setOnClickListener { pokaz("(", false)}
         btn_close.setOnClickListener { pokaz(")", false)}
+
+//        btn_sin.setOnClickListener { pokaz("sin", false)}
+//        btn_cos.setOnClickListener { pokaz("cos", false)}
 
         btn_back.setOnClickListener {
             val stroka = btn_Expression.text.toString()
@@ -74,5 +79,15 @@ class MainActivity : AppCompatActivity() {
             btn_Expression.append(stroka)
             btn_Result.text = ""
         }
+    }
+
+    fun onClickGoSin(view: View) {
+        val intent = Intent(this, sinActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onClickGoCos(view: View) {
+        val intent = Intent(this, cosActivity::class.java)
+        startActivity(intent)
     }
 }
